@@ -1,0 +1,15 @@
+<div class="conatainer">
+  <div class="p-4 col-4">
+    <%= simple_form_for(@flat) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <div class="d-flex justify-content-between">
+        <%= f.input :price_per_night %>
+        <%= f.input :number_of_guests %>
+      </div>
+      
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
